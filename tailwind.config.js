@@ -21,9 +21,8 @@ module.exports = {
             'ranking-grey': '#e4d2be',
         },
         backgroundImage: {
-            'wooden': "url('/src/assets/images/background.png')",
-            'wooden2': "url('/src/assets/images/background3.png')"
-        }
+            'wooden': "url('assets/background.png')",
+            'wooden2': "url('assets/background3.png')"        }
     },
 },
   plugins: [],

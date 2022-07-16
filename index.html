@@ -16,7 +16,7 @@
       <div class="w-full h-full bg-wooden ">
           <div class="h-full flex flex-col justify-center items-center ">
               <div class="logo mb-10 page-main--fade-in-logo">
-                  <img src="./src/assets/images/logo.png" alt="logo">
+                  <img src="assets/logo.png" alt="logo">
               </div>
               <div class="title mb-[48px] text-5xl text-white page-main--fade-in-title opacity-0">
                   <p>Behaviour Coach</p>
@@ -124,7 +124,7 @@
                                   </div>
                               </form>
                           </div>
-                          <button id="rate-button" class="btn mt-4 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" onclick="rateAudio()">Rate</button>
+                          <button id="rate-button" class="btn mt-4 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" >Rate</button>
                       </div>
              
                   </div>
@@ -140,29 +140,31 @@
                           <div id="property-bought-message" class="font-bold text-2xl tracking-[2px] hidden text-orange-text px-4 py-6 m-6 rounded-[22px]">
                               Congratulations. You just bought this property
                           </div>
-                          <button class="btn w-[155px] py-2 tracking-[4px] bg-green-500 rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="buy-button" onclick="buyAudio()">Buy</button>
+                          <button class="btn w-[155px] py-2 tracking-[4px] bg-green-500 rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="buy-button">Buy</button>
                       </div>
                   </div>
               </div>
               <div class="center min-w-[60%] m-auto" id="calculate">
                   <div class="bg-slate-500 grey-board m-auto w-[98vh] h-[98vh] flex">
-                      <div class="flip-container absolute top-[50%] left-[50%] translate-[-50%]" id="flip-container">
+                      <div class="flip-container drop-shadow-xl absolute top-[50%] left-[50%] translate-[-50%]" id="flip-container">
                           <div class="flipper">
                               <div class="front" id="flip-front">
                                   <div class="flip-front-title" id="flip-front-title">
                                       
                                   </div>
-                                  <div class="flip-front-text" id="flip-front-text">
-                                      
+                                  <div class="flip-center">
+                                    <div class="flip-front-text" id="flip-front-text">
+                                    </div>
+                                    <div class="flip-back-photo" id="flip-back-photo">
+                                        <img  id="flip-back-photo-src" src="">
+                                    </div>
+                                    
                                   </div>
                                   <div class="flip-front-price" id="flip-front-price">
                   
                                   </div>
                               </div>
                               <div class="back" id="flip-back">
-                                  <div class="flip-back-photo" id="flip-back-photo">
-                                      <img  id="flip-back-photo-src" src="">
-                                  </div>
                                   <div class="flip-back-text" id="flip-back-text">
                                       
                                   </div>
@@ -175,7 +177,7 @@
                           <div class="flex container-corner">
                               <div class="box box-corner box-corner-top-left" id="box-18">
                                   <div class="tile-color title-top-right">
-                                      <img id="good-deed-image" src="./src/assets/images/good-deed.png" alt="good-deed">
+                                      <img id="good-deed-image" src="assets/good-deed.png" alt="good-deed">
                                   </div>
                                   <div class="tile-name text-top-left"></div>
                               </div>
@@ -185,7 +187,7 @@
                               </div>
                               <div class="box box-top" id="box-20">
                                   <div class="tile-color title random">
-                                      <img id="random-top-image" src="./src/assets/images/random-1.png" alt="random">
+                                      <img id="random-top-image" src="assets/random-1.png" alt="random">
                                   </div>
                                   <div class="tile-name text-bottom"></div>
                               </div>
@@ -203,7 +205,7 @@
                               </div>
                               <div class="box box-top" id="box-24">
                                   <div class="tile-color title random">
-                                      <img id="random-top-image" src="./src/assets/images/random-2.png" alt="random">
+                                      <img id="random-top-image" src="assets/random-2.png" alt="random">
                                   </div>
                                   <div class="tile-name text-bottom"></div>
                               </div>
@@ -217,7 +219,7 @@
                               </div>
                               <div class="box box-corner box-corner-top-right" id="box-27">
                                   <div class="tile-color title-top-right">
-                                      <img id="education-image" src="./src/assets/images/education.png" alt="education">
+                                      <img id="education-image" src="assets/education.png" alt="education">
                                   </div>
                                   <div class="tile-name text-top-right"></div>
                               </div>
@@ -248,7 +250,7 @@
                               </div>
                               <div class="box box-side-right" id="box-29">
                                   <div class="tile-color title random">
-                                      <img id="random-right-image" src="./src/assets/images/random-2.png" alt="random">
+                                      <img id="random-right-image" src="assets/random-2.png" alt="random">
                                   </div>
                                   <div class="tile-name text-bottom"></div>
                               </div>
@@ -256,7 +258,7 @@
                           <div class="flex container-side">
                               <div class="box box-side" id="box-15">
                                   <div class="tile-color title random">
-                                      <img id="random-left-image" src="./src/assets/images/random-1.png" alt="random">
+                                      <img id="random-left-image" src="assets/random-1.png" alt="random">
                                   </div>
                                   <div class="tile-name text-bottom"></div>
                               </div>
@@ -274,7 +276,7 @@
                                   <div class="tile-color title-left"></div>
                               </div>
                               <div class="box-center">
-                                  <img class="center-logo" src="./src/assets/images/logo.png" >
+                                  <img class="center-logo" src="assets/logo.png" >
                               </div>
                               <div class="box box-side-right" id="box-31">
                                   <div class="tile-color title-right"></div>
@@ -322,7 +324,7 @@
                           <div class="flex container-side">
                               <div class="box box-side" id="box-12">
                                   <div class="tile-color title random">
-                                      <img id="random-left-image" src="./src/assets/images/random-2.png" alt="random">
+                                      <img id="random-left-image" src="assets/random-2.png" alt="random">
                                   </div>
                                   <div class="tile-name text-bottom"></div>
                               </div>
@@ -331,7 +333,7 @@
                               </div>
                               <div class="box box-side-right" id="box-33">
                                   <div class="tile-color title random">
-                                      <img id="random-right-image" src="./src/assets/images/random-1.png" alt="random">
+                                      <img id="random-right-image" src="assets/random-1.png" alt="random">
 
                                   </div>
                                   <div class="tile-name text-bottom"></div>
@@ -367,7 +369,7 @@
                           <div class="flex container-corner">
                               <div class="box box-corner box-corner-bottom-left" id="box-9">
                                   <div class="tile-color title-bottom-left">
-                                      <img id="education-image" src="./src/assets/images/education.png" alt="education">
+                                      <img id="education-image" src="assets/education.png" alt="education">
                                   </div>
                                   <div class="tile-name text-bottom-left"></div>
                               </div>
@@ -383,7 +385,7 @@
                               </div>
                               <div class="box box-bottom" id="box-6">
                                   <div class="tile-color title random">
-                                      <img id="random-bottom-image" src="./src/assets/images/random-2.png" alt="random">
+                                      <img id="random-bottom-image" src="assets/random-2.png" alt="random">
                                   </div>
                                   <div class="tile-name text-bottom"></div>
                               </div>
@@ -399,7 +401,7 @@
                               </div>
                               <div class="box box-bottom" id="box-3">
                                   <div class="tile-color title random">
-                                      <img id="random-bottom-image" src="./src/assets/images/random-1.png" alt="random">
+                                      <img id="random-bottom-image" src="assets/random-1.png" alt="random">
                                   </div>
                                   <div class="tile-name text-bottom"></div>
                               </div>
@@ -590,14 +592,39 @@
                                       </ol>
                                   </div>
                               </div>
-                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="roll-button" onclick="rollDiceAudio()">Roll</button>
-                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold hidden" id="move-button" onclick="moveTokenAudio()">Move</button>
-                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-red-500 rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold hidden" id="done-button" onclick="endAudio()">End Turn</button>
+                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="roll-button">Roll</button>
+                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold hidden" id="move-button">Move</button>
+                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-red-500 rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold hidden" id="done-button">End Turn</button>
                           </div>
                       </div>        
                   </div>
               </div>
           </div>
+      </div>
+      <div class="hidden">
+        <img src="assets/butterfly-sketch.jpg" />
+        <img src="assets/cat-and-cow-pose.jpg" />
+        <img src="assets/child-pose.jpg" />
+        <img src="assets/crunches.jpg" />
+        <img src="assets/down-dog.jpg" />
+        <img src="assets/education.png" />
+        <img src="assets/good-deed.png" />
+        <img src="assets/high-knee.jpg" />
+        <img src="assets/jumping-jacks.jpg" />
+        <img src="assets/logo.png" />
+        <img src="assets/lower-back-stretch.jpg" />
+        <img src="assets/lunge.jpg" />
+        <img src="assets/mountain-climber.jpg" />
+        <img src="assets/plank.jpg" />
+        <img src="assets/push-up.jpg" />
+        <img src="assets/random-1.png" />
+        <img src="assets/random-2.png" />
+        <img src="assets/run-jog.jpg" />
+        <img src="assets/squat.jpg" />
+        <img src="assets/step-up.jpg" />
+        <img src="assets/stretch-to-touch-toes.jpg" />
+        <img src="assets/up-dog.jpg" />
+        <img src="assets/walk.jpg" />
       </div>
   </div>
     <script type="module" src="/main.js"></script>

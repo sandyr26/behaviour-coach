@@ -719,8 +719,8 @@ button:hover {
   }
   
   .flip-container, .front, .back {
-      width: 260px;
-      height: 380px;
+      width: 320px;
+      height: 440px;
   }
   
   /* flip speed goes here */
@@ -753,6 +753,11 @@ button:hover {
 
 #flip-front{
     /* border: 1px solid black; */
+    background-color: #f3f3f3;
+}
+
+#flip-back{
+    background-color: #f3f3f3;
 }
 
 .flip-front-title{
@@ -764,14 +769,25 @@ button:hover {
     height: 25%;
     padding: 10% 0;
   }
+  
+  .flip-center{
+    margin: 0% 3% 0 3%;
+    border: 1px solid black;
+    border-bottom: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 50%;
+    /* padding: 10% 0; */
+    background-color: white;
+  }
 
 .flip-front-text{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 800;
-    border: 1px solid black;
     margin: 0 3% 3% 3%;
-    padding: 26% 0;
+    height: 20%;
+
 }
 .flip-front-price{
     text-align: center;
@@ -779,22 +795,25 @@ button:hover {
     border: 1px solid black;
     margin: 0 3% 3% 3%;
     padding: 10% 0;
-    background-color: #eeeeea;
+    background-color: #fcfce4;
+    height: 20%;
+
 }
 
 .flip-back-photo{
     margin: 3% 3% 0 3%;
-    border: 1px solid black;
-    border-bottom: 0;
-    height: 30%;
+    height: 70%;
 }
 
 .flip-back-text{
-    margin: 0 3% 3% 3%;
+    margin: 3% 3% 3% 3%;
     border: 1px solid black;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: grey;
+    background-color: #fcfce4;
     overflow-y: scroll;   
-    height: 66%;
+    height: 95%;
     padding: 5%;
 }
 

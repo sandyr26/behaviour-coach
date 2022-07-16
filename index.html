@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./node_modules/jquery/dist/jquery.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="page-main" class="hidden w-screen h-screen z-10">
+      <div class="w-full h-full bg-wooden ">
+          <div class="h-full flex flex-col justify-center items-center ">
+              <div class="logo mb-10 page-main--fade-in-logo">
+                  <img src="./src/assets/images/logo.png" alt="logo">
+              </div>
+              <div class="title mb-[48px] text-5xl text-white page-main--fade-in-title opacity-0">
+                  <p>Behaviour Coach</p>
+              </div>
+              <div class="button page-main--fade-in-button opacity-0">
+                  <button
+                      class="btn px-10 py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="showPageSelect"
+                      >Start</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="page-select" class="hidden w-screen h-screen page-slide-left absolute top-0 opacity-0 z-20">
+      <div class="w-full h-full flex justify-center items-center bg-wooden">
+          <div class="flex flex-col justify-center items-center w-[30rem] h-[38rem] drop-shadow-[0px_0px_3px_rgb(0,0,0)] border-green-border border-[13px] bg-white-background rounded-[8rem]">
+              <div class="bg-orange-background drop-shadow-[0px_6px_1px_rgb(189,168,150)] mt-[-40px] w-min py-2 px-6 text-5xl rounded-[18px] font-extrabold tracking-[4px] text-center text-yellow-text">
+                  <p>Players</p>
+              </div>
+              <div class="font-bold text-5xl text-orange-text pt-12 tracking-[2px] page-select--text-1 opacity-0">
+                  Choose number
+              </div>
+              <div class="radio-group grid grid-cols-3 justify-items-center page-select--text-2 opacity-0">
+                  <div id="menuSelect2" data-value="2"
+                      class="radio btn bg-green-button rounded-2xl text-center text-4xl text-white selected">
+                      2
+                  </div>
+                  <div id="menuSelect3" data-value="3"
+                      class="radio btn bg-green-button rounded-2xl text-center text-4xl text-white">
+                      3
+                  </div>
+                  <div id="menuSelect4" data-value="4"
+                      class="radio btn bg-green-button rounded-2xl text-center text-4xl text-white">
+                      4
+                  </div>
+                  <div id="menuSelect5" data-value="5"
+                      class="radio btn bg-green-button rounded-2xl text-center text-4xl text-white">
+                      5
+                  </div>
+                  <div id="menuSelect6" data-value="6"
+                      class="radio btn bg-green-button rounded-2xl text-center text-4xl text-white">
+                      6
+                  </div>
+                  <div id="menuSelect7" data-value="7"
+                      class="radio btn bg-green-button rounded-2xl text-center text-4xl text-white">
+                      7
+                  </div>
+                  <div id="menuSelect8" data-value="8"
+                      class="radio btn bg-green-button rounded-2xl text-center text-4xl text-white">
+                      8
+                  </div>
+              </div>
+              <div class="text-center py-8 page-select--text-3 opacity-0">
+                  <button
+                  class="btn px-10 py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="showPageName">Next</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="page-name" class="hidden w-screen h-screen z-30">
+      <div class="w-full h-full flex justify-center items-center bg-wooden">
+          <div class="flex flex-col justify-center items-center w-[40rem] h-[38rem] drop-shadow-[0px_0px_3px_rgb(0,0,0)] border-green-border border-[13px] bg-white-background rounded-[8rem]">
+              <div class="bg-orange-background drop-shadow-[0px_6px_1px_rgb(189,168,150)] mt-[-40px] w-min py-2 px-6 text-5xl rounded-[18px] font-extrabold tracking-[4px] text-center text-yellow-text">
+                  <p>Names</p>
+              </div>
+              <div class="p-10 flex flex-col h-[500px]">
+                  <div class="container-generate flex flex-col h-80 container overflow-auto">
+                      <div id="generate-num-players" class="hidden">
+                      </div>
+                  </div>
+              </div>
+              <div class="flex justify-center px-8 pb-8 pt-0">
+                  <button class="btn px-10 py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="showPageBoard">Next</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="page-board" class="w-screen h-screen hidden">
+      <div class="board-container w-full h-full bg-wooden2">
+          <div class="menu absolute right-0 top-0">
+              <button class="text-center btn py-2 m-2 w-12 h-12 bg-yellow-custom rounded-3xl text-xl text-white hover:bg-brown-custom hover:border-yellow-custom" id="download-button">
+                  X
+              </button>
+              <!-- <button class="text-center btn py-2 m-2 w-12 h-12 bg-yellow-custom rounded-3xl text-xl text-white hover:bg-brown-custom hover:border-yellow-custom" onclick="upload()" id="">
+                  Upload
+              </button> -->
+          </div>
+          <div class="container-new flex h-[100%]">
+              <div class="flex flex-col justify-between new-left min-w-[20%] px-4">
+                  <div id="rate-activity"  class="hidden middle mt-[40px] pt-8 h-[380px] drop-shadow-[0px_0px_3px_rgb(0,0,0)] border-green-border border-[8px] bg-white-background rounded-[4rem] hidde">
+                      <div class="ml-[50px] bg-orange-background drop-shadow-[0px_6px_1px_rgb(189,168,150)] mt-[-70px] w-min py-2 px-6 text-3xl rounded-[18px] font-extrabold tracking-[4px] text-center text-yellow-text">
+                          <p>Rate</p>
+                      </div>
+                      <div class="flex flex-col justify-center items-center">
+                          <div class="text-white text-xl text-center">
+                              <h3 class="font-bold text-2xl tracking-[2px] text-yellow-text bg-inner-green px-4 py-6 m-6 rounded-[22px]">Rate your activity</h3>
+                          </div>
+                          <div class="justify-center range-competed text-center">
+                              <form name="myform" oninput="range1value.value = range1.valueAsNumber">
+                                  <input name="range1" id="range-competed" type="range" min="1" max="5" value="3" step="1">
+                                  <div>
+                                      <output id="range-completed-label" class="font-bold text-4xl text-orange-text" name="range1value" for="range1">3</output>
+                                  </div>
+                              </form>
+                          </div>
+                          <button id="rate-button" class="btn mt-4 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" onclick="rateAudio()">Rate</button>
+                      </div>
+             
+                  </div>
+
+                  <div class="middle mb-[10px] pt-8 h-[320px] drop-shadow-[0px_0px_3px_rgb(0,0,0)] border-green-border border-[8px] bg-white-background rounded-[4rem] hidden" id="buy-container">
+                      <div class="ml-[50px] bg-orange-background drop-shadow-[0px_6px_1px_rgb(189,168,150)] mt-[-70px] w-min py-2 px-6 text-3xl rounded-[18px] font-extrabold tracking-[4px] text-center text-yellow-text">
+                          <p>Buy</p>
+                      </div>
+                      <div class="flex flex-col justify-center items-center">
+                          <div id="buy-message-container" class="font-bold text-2xl tracking-[2px] text-yellow-text bg-inner-green px-4 py-6 m-6 rounded-[22px]" >
+                              Do you want to buy this property?
+                          </div>
+                          <div id="property-bought-message" class="font-bold text-2xl tracking-[2px] hidden text-orange-text px-4 py-6 m-6 rounded-[22px]">
+                              Congratulations. You just bought this property
+                          </div>
+                          <button class="btn w-[155px] py-2 tracking-[4px] bg-green-500 rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="buy-button" onclick="buyAudio()">Buy</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="center min-w-[60%] m-auto" id="calculate">
+                  <div class="bg-slate-500 grey-board m-auto w-[98vh] h-[98vh] flex">
+                      <div class="flip-container absolute top-[50%] left-[50%] translate-[-50%]" id="flip-container">
+                          <div class="flipper">
+                              <div class="front" id="flip-front">
+                                  <div class="flip-front-title" id="flip-front-title">
+                                      
+                                  </div>
+                                  <div class="flip-front-text" id="flip-front-text">
+                                      
+                                  </div>
+                                  <div class="flip-front-price" id="flip-front-price">
+                  
+                                  </div>
+                              </div>
+                              <div class="back" id="flip-back">
+                                  <div class="flip-back-photo" id="flip-back-photo">
+                                      <img  id="flip-back-photo-src" src="">
+                                  </div>
+                                  <div class="flip-back-text" id="flip-back-text">
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                   
+                      <div class="board-container-green m-auto w-[97vh] h-[97vh] bg-green-custom">
+      
+                          <div class="flex container-corner">
+                              <div class="box box-corner box-corner-top-left" id="box-18">
+                                  <div class="tile-color title-top-right">
+                                      <img id="good-deed-image" src="./src/assets/images/good-deed.png" alt="good-deed">
+                                  </div>
+                                  <div class="tile-name text-top-left"></div>
+                              </div>
+                              <div class="box box-top" id="box-19">
+                                  <div class="tile-name text-top"></div>
+                                  <div class="tile-color title-top"></div>
+                              </div>
+                              <div class="box box-top" id="box-20">
+                                  <div class="tile-color title random">
+                                      <img id="random-top-image" src="./src/assets/images/random-1.png" alt="random">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-top" id="box-21">
+                                  <div class="tile-name text-top"></div>
+                                  <div class="tile-color title-top"></div>
+                              </div>
+                              <div class="box box-top" id="box-22">
+                                  <div class="tile-name text-top"></div>
+                                  <div class="tile-color title-top"></div>
+                              </div>
+                              <div class="box box-top" id="box-23">
+                                  <div class="tile-name text-top"></div>
+                                  <div class="tile-color title-top"></div>
+                              </div>
+                              <div class="box box-top" id="box-24">
+                                  <div class="tile-color title random">
+                                      <img id="random-top-image" src="./src/assets/images/random-2.png" alt="random">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-top" id="box-25">
+                                  <div class="tile-name text-top"></div>
+                                  <div class="tile-color title-top"></div>
+                              </div>
+                              <div class="box box-top" id="box-26">
+                                  <div class="tile-name text-top"></div>
+                                  <div class="tile-color title-top"></div>
+                              </div>
+                              <div class="box box-corner box-corner-top-right" id="box-27">
+                                  <div class="tile-color title-top-right">
+                                      <img id="education-image" src="./src/assets/images/education.png" alt="education">
+                                  </div>
+                                  <div class="tile-name text-top-right"></div>
+                              </div>
+                          </div>
+      
+      
+      
+                          <div class="flex container-side">
+                              <div class="box box-side" id="box-17">
+                                  <div class="tile-name text-left"></div>
+                                  <div class="tile-color title-left"></div>
+                              </div>
+                              <div class="box-center">
+                                  
+                              </div>
+                              <div class="box box-side-right" id="box-28">
+                                  <div class="tile-color title-right"></div>
+                                  <div class="tile-name text-right"></div>
+                              </div>
+                          </div>
+                          <div class="flex container-side" >
+                              <div class="box box-side" id="box-16">
+                                  <div class="tile-name text-left"></div>
+                                  <div class="tile-color title-left"></div>
+                              </div>
+                              <div class="box-center">
+                                  
+                              </div>
+                              <div class="box box-side-right" id="box-29">
+                                  <div class="tile-color title random">
+                                      <img id="random-right-image" src="./src/assets/images/random-2.png" alt="random">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                          </div>
+                          <div class="flex container-side">
+                              <div class="box box-side" id="box-15">
+                                  <div class="tile-color title random">
+                                      <img id="random-left-image" src="./src/assets/images/random-1.png" alt="random">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box-center">
+                                  
+                              </div>
+                              <div class="box box-side-right" id="box-30">
+                                  <div class="tile-color title-right"></div>
+                                  <div class="tile-name text-right"></div>
+                              </div>
+                          </div>
+                          <div class="flex container-side">
+                              <div class="box box-side"  id="box-14">
+                                  <div class="tile-name text-left"></div>
+                                  <div class="tile-color title-left"></div>
+                              </div>
+                              <div class="box-center">
+                                  <img class="center-logo" src="./src/assets/images/logo.png" >
+                              </div>
+                              <div class="box box-side-right" id="box-31">
+                                  <div class="tile-color title-right"></div>
+                                  <div class="tile-name text-right"></div>
+                              </div>
+                          </div>
+                          <div class="flex container-side">
+                              <div class="box box-side" id="box-13">
+                                  <div class="tile-name text-left"></div>
+                                  <div class="tile-color title-left"></div>
+                              </div>
+                              <div class="box-center">
+                                      <div class="player-token" id="player-token">
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-1">
+      
+                                      </div>
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-2">
+      
+                                      </div>
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-3">
+      
+                                      </div>
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-4">
+      
+                                      </div>
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-5">
+      
+                                      </div>
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-6">
+      
+                                      </div>
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-7">
+      
+                                      </div>
+                                      <div class="rounded-full absolute hidden player-token" id="player-token-8">
+      
+                                  </div>
+                              </div>  
+                              </div>
+                              <div class="box box-side-right" id="box-32">
+                                  <div class="tile-color title-right"></div>
+                                  <div class="tile-name text-right"></div>
+                              </div>
+                          </div>
+                          <div class="flex container-side">
+                              <div class="box box-side" id="box-12">
+                                  <div class="tile-color title random">
+                                      <img id="random-left-image" src="./src/assets/images/random-2.png" alt="random">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box-center">
+                                  
+                              </div>
+                              <div class="box box-side-right" id="box-33">
+                                  <div class="tile-color title random">
+                                      <img id="random-right-image" src="./src/assets/images/random-1.png" alt="random">
+
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                          </div>
+                          <div class="flex container-side">
+                              <div class="box box-side" id="box-11">
+                                  <div class="tile-name text-left"></div>
+                                  <div class="tile-color title-left"></div>
+                              </div>
+                              <div class="box-center">
+                                  
+                              </div>
+                              <div class="box box-side-right" id="box-34">
+                                  <div class="tile-color title-right"></div>
+                                  <div class="tile-name text-right"></div>
+                              </div>
+                          </div>
+                          <div class="flex container-side">
+                              <div class="box box-side" id="box-10">
+                                  <div class="tile-name text-left"></div>
+                                  <div class="tile-color title-left"></div>
+                              </div>
+                              <div class="box-center">
+                                  
+                              </div>
+                              <div class="box box-side-right" id="box-35">
+                                  <div class="tile-color title-right"></div>
+                                  <div class="tile-name text-right"></div>
+                              </div>
+                          </div>
+      
+                          <div class="flex container-corner">
+                              <div class="box box-corner box-corner-bottom-left" id="box-9">
+                                  <div class="tile-color title-bottom-left">
+                                      <img id="education-image" src="./src/assets/images/education.png" alt="education">
+                                  </div>
+                                  <div class="tile-name text-bottom-left"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-8">
+                                  <div class="tile-color title-bottom">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-7">
+                                  <div class="tile-color title-bottom">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-6">
+                                  <div class="tile-color title random">
+                                      <img id="random-bottom-image" src="./src/assets/images/random-2.png" alt="random">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-5">
+                                  <div class="tile-color title-bottom">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-4">
+                                  <div class="tile-color title-bottom">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-3">
+                                  <div class="tile-color title random">
+                                      <img id="random-bottom-image" src="./src/assets/images/random-1.png" alt="random">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-2">
+                                  <div class="tile-color title-bottom">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-bottom" id="box-1">
+                                  <div class="tile-color title-bottom">
+                                  </div>
+                                  <div class="tile-name text-bottom"></div>
+                              </div>
+                              <div class="box box-corner box-corner-bottom-right" id="box-0">
+                                  <div class="tile-color title-bottom-right">
+                                  </div>
+                                  <div class="tile-name text-bottom-right"></div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="new-right min-w-[20%] h-full px-4">
+                  <div class="flex flex-col justify-between h-full">
+                      <div class="new-top flex justify-center hidden">
+                          <div class="current-player flex items-center">
+                              <div id="player-title-color" class="player-names my-4 py-2 px-20 text-white rounded-xl text-sm text-center">
+                                  <p id="player-title">Player 1's turn</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-list flex flex-col justify-center items-center mt-[30px] h-[350px] drop-shadow-[0px_0px_3px_rgb(0,0,0)] border-green-border border-[8px] bg-white-background rounded-[4rem]">
+                          <div class="bg-orange-background drop-shadow-[0px_6px_1px_rgb(189,168,150)] mt-[-50px] w-min py-2 px-6 text-3xl rounded-[18px] font-extrabold tracking-[4px] text-center text-yellow-text">
+                              <p>Ranking</p>
+                          </div>
+                          <div class="flex flex-col pt-4 gap-2 overflow-auto h-[290px] w-full px-4">
+                              <div id="player-title-container-1" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-1" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-1">
+                                          Player 1
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-1"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="player-title-container-2" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-2" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-2">
+                                          Player 2
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-2"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="player-title-container-3" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-3" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-3">
+                                          Player 3
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-3"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="player-title-container-4" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-4" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-4">
+                                          Player 4
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-4"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="player-title-container-5" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-5" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-5">
+                                          Player 5
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-5"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="player-title-container-6" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-6" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-6">
+                                          Player 6
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-6"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="player-title-container-7" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-7" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-7">
+                                          Player 7
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-7"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="player-title-container-8" class="flex player-title hidden text-center px-2 py-2 rounded-xl bg-ranking-grey">
+                                  <div id="player-title-8" class="w-[42px] h-[42px]">
+                                      Photo
+                                  </div>
+                                  <div class="pl-4 flex flex-col">
+                                      <div class="font-semibold tracking-wide" id="player-title-name-8">
+                                          Player 8
+                                      </div>
+                                      <div id="player-title-score-container">
+                                          <span>Rs </span><span id="player-title-score-8"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                      <div class="mb-[10px] flex flex-col justify-center items-center h-[350px] drop-shadow-[0px_0px_3px_rgb(0,0,0)] border-green-border border-[8px] bg-white-background rounded-[4rem]">
+                          <div class="bg-orange-background drop-shadow-[0px_6px_1px_rgb(189,168,150)] mt-[-70px] w-min py-2 px-6 text-3xl rounded-[18px] font-extrabold tracking-[4px] text-center text-yellow-text">
+                              <p>Dice</p>
+                          </div>
+                          <div class="flex flex-col items-center justify-center card-list description">
+                              
+                              <div id="roll-number2" class="text-white text-3xl text-center pt-4">
+                                  <div class="dice">
+                                      <ol class="die-list even-roll" data-roll="1" id="die-1">
+                                          <li class="die-item" data-side="1">
+                                              <span class="dot"></span>
+                                          </li>
+                                          <li class="die-item" data-side="2">
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                          </li>
+                                          <li class="die-item" data-side="3">
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                          </li>
+                                          <li class="die-item" data-side="4">
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                          </li>
+                                          <li class="die-item" data-side="5">
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                          </li>
+                                          <li class="die-item" data-side="6">
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                              <span class="dot"></span>
+                                          </li>
+                                      </ol>
+                                  </div>
+                              </div>
+                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold" id="roll-button" onclick="rollDiceAudio()">Roll</button>
+                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-yellow-custom rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold hidden" id="move-button" onclick="moveTokenAudio()">Move</button>
+                              <button class="btn mt-8 w-[155px] py-2 tracking-[4px] bg-red-500 rounded-2xl text-3xl text-center hover:bg-brown-custom hover:border-yellow-custom  drop-shadow-[0px_3px_1px_rgb(189,168,150)] text-yellow-text font-bold hidden" id="done-button" onclick="endAudio()">End Turn</button>
+                          </div>
+                      </div>        
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

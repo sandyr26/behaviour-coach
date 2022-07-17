@@ -1340,7 +1340,7 @@ function nextPlayer() {
   document.getElementById('rate-activity').style.display = "none"
   
   let rangeValue = document.getElementById('range-competed').value
-  const rangeValueArray = ["", 20, 40, 60, 80, 100]
+  const rangeValueArray = ["", 0, 50, 100]
   playerScoreArray[currentPlayer] += rangeValueArray[rangeValue]
 
 
@@ -1541,3 +1541,10 @@ function endAudio() {
   endAudio.play(
   )
 }
+
+function changeSelected() {
+    console.log(selectedRange.value)
+}
+
+const selectedRange = document.getElementById('range-competed')
+selectedRange.addEventListener(onselect, changeSelected)

@@ -13,7 +13,7 @@ let data =  {
               4) Jump with your arms extended towards the sky.<br>
               5) Repeat 10 times.
               `,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Jumping Jack",
@@ -23,7 +23,7 @@ let data =  {
               4) Jump again, this time bringing your raised arms down to your sides and your opened legs back together. This will return you in the standing position.<br>
               5) Repeat the process 10 more times.<br>
               `,
-              "url": "assets/jumping-jacks.jpg"
+              "url": "assets/jumping-jacks.b94a21a4.jpg"
           },
           {
               "title": "Squat",
@@ -33,14 +33,14 @@ let data =  {
               3) Keeping the soles of your feet firmly flat on the ground, bend your knees and push your hips out until you are in a sitting/crouching position.<br>
               4) Return to the starting position. <br>
               5) Repeat 10 times`,
-              "url": "assets/squat.jpg"
+              "url": "assets/squat.2d74cc86.jpg"
           },
           {
               "title": "Plank",
               "description": `Please do a plank for 30s.<br> Here are the instructions: <br>
               1) Place the palms of your hands on the ground, shoulder-width apart, and extend your feet behind as in a push up position.<br>
               2) Bend your elbows, bringing the whole body close to the ground. Hold for 30s or one minute. `,
-              "url": "assets/plank.jpg"
+              "url": "assets/plank.2be6b9d2.jpg"
           },
           {
               "title": "Bicycle crunch",
@@ -50,7 +50,7 @@ let data =  {
               3) Alternate extending one leg while bringing the other leg towards your chest, imitating the pedaling motion of a bicycle. <br>
               4) While your legs do this motion, simultaneously twist your upper body to alternate touching a knee with the opposite elbow. <br>
               5) Repeat for 10 repetitions. `,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Mountain climber",
@@ -59,7 +59,7 @@ let data =  {
               2) Engage your core so that your back is in a straight line. <br>
               3) Briefly bring the right knee inward toward your chest before extending it so that you return in the starting position. Repeat for the left knee.<br>
               4) Alternate bringing each knee inward toward your chest. Do so for 10 reps.`,
-              "url": "assets/mountain-climber.jpg"
+              "url": "assets/mountain-climber.56664c01.jpg"
           },
           {
               "title": "Push up",
@@ -70,24 +70,24 @@ let data =  {
               4) From this raised position, bend your elbows to momentarily bring your torso towards the ground. <br>
               5) Straighten your arms to lift you up again. This counts as one push-up. <br>
               6) Make sure to inhale and exhale with each push-up. `,
-              "url": "assets/push-up.jpg"
+              "url": "assets/push-up.64f0b2d8.jpg"
           },
           {
               "title": "High knee",
               "description": `Please do 10 high-knees. <br>Here are the instructions: <br>
               1) Start in a standing position, feet spread shoulder-width apart. <br>
               2) Alternate lifting your legs, bringing the knees at a 90° angle`,
-              "url": "assets/high-knee.jpg"
+              "url": "assets/high-knee.0e8e820f.jpg"
           },
           {
               "title": "Run/ Jog",
               "description": `Run/ Jog for 1 minute`,
-              "url": "assets/run-jog.jpg"
+              "url": "assets/run-jog.05934842.jpg"
           },
           {
               "title": "Walk",
               "description": `Walk for 2 minutes`,
-              "url": "assets/walk.jpg"
+              "url": "assets/walk.546b0b0b.jpg"
           },
           {
               "title": "Lunge",
@@ -96,7 +96,7 @@ let data =  {
               2) Step forward with the right leg, sole of the foot firmly planted on the ground. <br>
               3) Bend the right knee so that the right leg forms a 90° angle with the ground. Simultaneously bend the left knee until it lightly touches the ground. <br>
               4) Alternate legs and repeat. `,
-              "url": "assets/lunge.jpg"
+              "url": "assets/lunge.62369fe3.jpg"
           },
           {
               "title": "Swimmer",
@@ -106,7 +106,7 @@ let data =  {
               3) Gently lift your right arm and left leg up towards the ceiling while you face the ground. Hold for 2 seconds. <br>
               4) Gently lift your left arm and right leg up towards the ceiling while you face the ground. Hold for 2 seconds.<br>
               5) Repeat 10 times.`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Superman",
@@ -115,7 +115,7 @@ let data =  {
               2) Extend your arms in front of you. <br>
               3) Gently lift your arms and legs up towards the ceiling while you face the ground. Hold for 3 seconds. <br>
               4) Repeat 10 times.`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Step up",
@@ -125,21 +125,21 @@ let data =  {
               3) Step down from the platform. <br>
               4) Step onto the platform with the left foot this time. <br>
               5) Repeat this process 10 times while alternating the foot with which you step up the platform.`,
-              "url": "assets/step-up.jpg"
+              "url": "assets/step-up.0c7a02b1.jpg"
           },
           {
               "title": "Shuttle run",
               "description": `1) For this exercise, you will run back-and-forth between two points – point A and point B – placed at opposing ends. <br>
               2) Please do 6 repetitions as fast as you can. <br>
               3) This activity can be timed.`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Ladder run",
               "description": `For this exercise, you will imagine that you have a 50 meter-ladder on the ground.<br>
               Do small rapid steps at a jogging pace<br>
               Repeat 3 times`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Crunches",
@@ -148,14 +148,14 @@ let data =  {
               Lift your shoulder blades off of the mat while controlling the movement<br>
               Lower yourself back down, still in control of the movement<br>
               Repeat 10 times`,
-              "url": "assets/crunches.jpg"
+              "url": "assets/crunches.257dd8cd.jpg"
           }
       ],
       "breath": [
           {
               "title": "Breathe deeply",
               "description": "Inhale and exhale slowly through the nose, making sure the stomach is expanding and retracting with each intake and exhale respectively.",
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Twist",
@@ -165,7 +165,7 @@ let data =  {
               2) Raise your arms in front of you at chest level. In this position, your armpits are opened. Your arms are bent at the elbow and your palms are facing down.<br>
               3) Keeping your feet and knees facing forward, gently twist the upper body – chest and shoulders – from left to right. <br>
               Your arms move with you such that with each twist, both elbows make a 90° turn – that is, when twisting the upper body to the right, the left elbow will point forward in the direction you are facing, while the right elbow faces the direction behind you and vice versa when twisting to the left. `,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Lower back stretch",
@@ -174,7 +174,7 @@ let data =  {
               Lengthen your back, and avoid lifting your hips. <br>
               Breathe deeply, releasing any tension. <br>
               Hold this pose for 30 seconds and repeat 3 times.`,
-              "url": "assets/lower-back-stretch.jpg"
+              "url": "assets/lower-back-stretch.aab8bba3.jpg"
           },
           {
               "title": "Child Pose",
@@ -182,14 +182,14 @@ let data =  {
               1) Begin in a kneeling position, bottom resting on the soles of your feet. <br>
               2) Bring your upper body towards the ground, so that your chest and belly rests on your thighs. <br>
               3) Finally rest your forehead on the ground while extending both arms, palm down, in front of you.`,
-              "url": "assets/child-pose.jpg"
+              "url": "assets/child-pose.1fb7560e.jpg"
           },
           {
               "title": "Butterfly stretches",
               "description": `Please do butterfly stretches for 30s.<br> Here are the instructions:<br>
               1) Sit on the floor with a straight back. Fold your legs so that both soles face each other.<br>
               2) Clasp your feet together with your hands while bringing your heels as close to your pelvis as possible. Hold this position for 30s while inhaling and exhaling slowly.`,
-              "url": "assets/butterfly-sketch.jpg"
+              "url": "assets/butterfly-sketch.533970f5.jpg"
           },
           {
               "title": "Wrist stretches",
@@ -197,7 +197,7 @@ let data =  {
               1) Lift an arm in front of you at shoulder level with the palm down. <br>
               2) Tilt the palm up so that it now faces the same direction you are facing. <br>
               3) With the other hand, gently deepen the stretch by pulling the hand towards you. Alternate wrists.`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Wrist stretches",
@@ -205,7 +205,7 @@ let data =  {
               1) Lift an arm at shoulder level, palms facing down. <br>
               2) Keeping the arm extended, drop you hand at the wrist so that the palm is now facing towards you. <br>
               3) With the help of the other hand, gently deepen the stretch. Repeat by alternating wrists.`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Down dog",
@@ -214,7 +214,7 @@ let data =  {
               2) Pressing into the ground through your palms, push your bottom up towards the sky. <br>
               3) Make sure your feet are front-facing and flat on the ground for stability. <br>
               4) Hold this pose for 15s.`,
-              "url": "assets/down-dog.jpg"
+              "url": "assets/down-dog.b403a852.jpg"
           },
           {
               "title": "Up dog",
@@ -223,7 +223,7 @@ let data =  {
               2) Place your palms, fingers facing front, on the ground near your lower ribs.<br>
               3) Inhale, pressing into the floor with your palms to lift your upper body and thighs off the ground.<br>
               4) Making sure your arms are straight, your shoulders are above your wrists, and exhale- raising your chin to look towards the sky.`,
-              "url": "assets/up-dog.jpg"
+              "url": "assets/up-dog.e476d4fa.jpg"
           },
           {
               "title": "Cat & Cow yoga Pose",
@@ -232,14 +232,14 @@ let data =  {
               2) To get into the cow position, inhale and lift the chin to look up at the ceiling while allowing your stomach to drop towards the ground. <br>
               3) To get into the cat position, exhale while rounding your back towards the ceiling, allowing your stomach to pull in and away from the ground. <br>
               4) Completing the cow pose followed by the cat pose counts as 1 rep. Repeat the steps for 10 repetitions.`,
-              "url": "assets/cat-and-cow-pose.jpg"
+              "url": "assets/cat-and-cow-pose.77821394.jpg"
           },
           {
               "title": "Stretch to touch toes",
               "description": `Please perform the toe touch stretch for 15s.<br> Here are the instructions: <br>
               1) From a standing position, bring slowly the trunk of the body as close as possible to the thighs while making sure to not round your back.<br>
               2) Extend the arms downwards, reaching towards the toes.`,
-              "url": "assets/stretch-to-touch-toes.jpg"
+              "url": "assets/stretch-to-touch-toes.5c7a0378.jpg"
           },
           {
               "title": "Strech to touch the sky",
@@ -247,116 +247,116 @@ let data =  {
               2) Standing on the tip of your toes, stretch towards the sky<br>
               3) Lower your arms and feet.<br>
               4) Repeat 10 times`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Drink",
               "description": `Drink a large glass of water, slowly`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           }
       ],
       "mental": [
           {
               "title": "Compliment a friend",
               "description": `Compliment a friend`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Compliment someone",
               "description": `Compliment someone next to you`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Encourage a close one",
               "description": `Encourage a close one`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Encourage everyone playing",
               "description": `Encourage everyone playing`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Make concrete plans",
               "description": `Make concrete plans to catch up with a friend or family member`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Send a caring message",
               "description": `Send a caring message to a love one`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Try something new",
               "description": `Try something new: write and plan an activity you will try for the first time`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Write a gratitude paragraph",
               "description": `Write a gratitude paragraph: a few lines on what you are thankful for today`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Read positive affirmations",
               "description": `Read positive affirmations`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Engage in a good action",
               "description": `Engage in a good action`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           }
       ],
       "creative": [
           {
               "title": "Listen to surrounding",
               "description": `Listen to surrounding noises and take note`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Write a story",
               "description": `Write a story with these 3 words:<br> Friend/ Joy/ Courage`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Tell a story",
               "description": `Tell a story with the 3 things closest to you`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Create a tower",
               "description": `Create a tower with things available`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Draw a sunset/ sunrise",
               "description": `Draw a sunset/ sunrise`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Draw something",
               "description": `Draw something that makes you happy`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Listen to your favorite song",
               "description": `Listen to your favorite song`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "List your passions",
               "description": `List your passions`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Take a funny picture",
               "description": `Take a funny picture`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
           {
               "title": "Watch a video",
               "description": `Watch a video of a baby laughing`,
-              "url": "assets/logo.png"
+              "url": "assets/logo.9e4914e1.png"
           },
       ],
       "education": [
@@ -364,204 +364,204 @@ let data =  {
                   "title": "Education Corner",
                   "description": `Did you know that laughing 100 times is equivalent to 15 minutes of exercise on a
                   stationary bike? Laugh away!`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Smokers reduce their life span expectancy by 11 minutes per cigarette.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `The average human adult body is comprised of 206 bones. Did you know that more than
                   half of the bones are in the hands (54 bones) and feet (52 bones)?`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Have you ever wondered why there are mirrors everywhere at the gym? Watching
                   yourself run in a mirror can make a treadmill workout go by faster and feel easier.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Body fat is converted into carbon dioxide as you exercise or go about your day.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Not only are bananas healthy snacks but they are also happy ones. They contain 10mg of
                   dopamine and can therefore boost your mood.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Did you know that listening to music while exercising can improve work out
                   performance by 15%? So, put on your favorite song.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Aerobic exercises (cardio) help create new brain cells. This enhances brainpower and
                   brain activity.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Exercise can sharpen your memory. It increases the production of cells that are
                   responsible for learning and memory.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Did you know that the more muscle mass you have, the more fat your body burns while
                   resting?`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Exercising three times per week for 45 minutes can prevent signs of ageing.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Having more muscle than fat means you can consume more calories.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Daily exercising boosts your immune system, which means you get sick less often.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Physical activity increases the amount of the hormone endorphin in your body and helps
                   with productivity.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Exercising can improve the look of your skin. Sweat releases dirt through your pores, which reduces acne and breakouts. `,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Exercising may boost self-confidence. `,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Having trouble sleeping? Working out helps. Exercising helps you relax and clear your mind.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Did you know optimists have fewer risks of dying from heart diseases?`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Sleep is essential for good health.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `You cannot get rid of abdominal fat solely through sit-ups. Cardiovascular exercises are also important.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Strengthening your core muscles enables a better posture and flat stomach.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Working out can help you feel energized, even when tired.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Walking barefooted helps improve your posture.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Surround yourself with good people. Having good social support will improve your health and longevity.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Remember to drink water. Mild dehydration can affect your brain functioning.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Drinking sufficient water per day can prevent frequent kidney stones`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `The addition of blueberries in your diet may help in the prevention of Type 2 diabetes, as they may facilitate the production of insulin.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Blueberries may help the memory of patients in an early stage of dementia.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `A diet rich in vegetables and fruits can help lower the risks of developing cardiovascular disease.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Journaling has healing and soothing effect, especially for people who struggle with stress, anxiety and depression.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },{
                   "title": "Education Corner",
                   "description": `Did you know that procrastination and impulsivity are behaviours that can be genetically inherited? `,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Your blood makes up 1/10th of your body weight.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Eggs can increase your intellectual performance and help you respond quicker. This is because the amino acids present in them gets converted into norepinephrine and dopamine – a compound responsible for alertness and mood-lifting.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Intentional slow and deep breathing has a direct positive impact on the central nervous system.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Consuming fermented foods (such as yogurt, kimchi, and pickles) is good for intestinal health.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `It is suggested to take a bite of dark chocolate before exercising. This is because dark chocolate impacts our glucose and insulin concentration, thereby improving one’s performance.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Physical activity during childhood can lead to higher cognitive functions later in life.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Running can help you learn faster. This is because aerobic exercises (cardio) help in the generation of new brain cells.`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
               {
                   "title": "Education Corner",
                   "description": `Sitting for more than 5 hours in front of the TV or a desk can increase the risk of early death (but not if you exercise for at least 1 hour daily).`,
-                  "url": "assets/logo.png"
+                  "url": "assets/education.8fa80bf9.png"
               },
       ]
   }
@@ -1241,7 +1241,7 @@ function moveToken() {
           flipFrontTitle.classList.add("random")
           flipFrontTitle.innerHTML = "Start"
           flipFrontText.innerHTML = `You passed go and earn Rs 100`
-          flipBackPhotoSrc.src = "assets/logo.png"
+          flipBackPhotoSrc.src = "assets/logo.9e4914e1.png"
           flipbacktext.innerHTML = `You passed go and earn Rs 100`
           flipFrontPrice.innerHTML = ""
           break;
@@ -1250,7 +1250,7 @@ function moveToken() {
           flipFrontTitle.classList.add("random")
           flipFrontTitle.innerHTML = "Education Corner"
           flipFrontText.innerHTML = `Education Corner`
-          flipBackPhotoSrc.src = "assets/logo.png"
+          flipBackPhotoSrc.src = "assets/logo.9e4914e1.png"
           flipbacktext.innerHTML = data.category.education[ran].description
           flipFrontPrice.innerHTML = ""
           break;
@@ -1258,7 +1258,7 @@ function moveToken() {
           flipFrontTitle.classList.add("random")
           flipFrontTitle.innerHTML = "Good Deed"
           flipFrontText.innerHTML = `You earn Rs 100`
-          flipBackPhotoSrc.src = "assets/logo.png"
+          flipBackPhotoSrc.src = "assets/logo.9e4914e1.png"
           flipbacktext.innerHTML = `You earn Rs 100`
           flipFrontPrice.innerHTML = ""
           break;
@@ -1266,7 +1266,7 @@ function moveToken() {
           flipFrontTitle.classList.add("random")
           flipFrontTitle.innerHTML = "Mystery"
           flipFrontText.innerHTML = `You earn Rs 100`
-          flipBackPhotoSrc.src = "assets/logo.png"
+          flipBackPhotoSrc.src = "assets/logo.9e4914e1.png"
           flipbacktext.innerHTML = `You earn Rs 100`
           flipFrontPrice.innerHTML = ""
           break;
